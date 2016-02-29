@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+  {% include base/head.html %}
+  
+  <body>
+    {% include base/preloader.html %}
+    {% include base/header.html %}
+	<a id="top"></a>
+
+        {{ content }}
+
+  <div class="back-to-top">
+      <a href="#top">TOP</i></a>
+  </div> 
+  <script type="text/javascript" src="{{ site.baseurl }}/lib/js/script.js"></script>
+  </body>
+
+</html>

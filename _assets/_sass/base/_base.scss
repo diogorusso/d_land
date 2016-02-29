@@ -1,0 +1,60 @@
+// TRUMPS and FIXES 
+
+//fix top_bar_anim_01 
+.orbit-container {
+  top:0px;
+}
+
+body {
+    overflow: hidden;
+    font-family: $theme-font-sans-serif;    
+}
+
+p {
+	font-size: $theme-paragraph-font-size;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color:#444444;
+}
+
+h1 {
+  font-family: $theme-font-serif;
+  font-size: 3.55rem;
+}
+
+@media #{$small-only} { 
+	h1{
+		font-size: 1.55rem;
+	}
+}
+
+@media #{$medium-only} {
+
+	h1{
+		font-size: 2.55rem;
+	}
+
+ }
+
+h2, h3, h4, h5, h6{ font-family: $theme-font-sans-serif; }
+
+h6 { font-size: 0.8rem;}
+
+.button, button {
+	
+	font-family: $theme-font-serif !important;
+	font-weight: 100; 
+	background:$theme-primary-color; 
+	color: $theme-light-color;
+}
+
+.button:focus, .button:hover, button:focus, button:hover {
+	background:$theme-secondary-color;
+	color: $theme-light-color;
+}
+
+.button.large, button.large{
+	font-size: 1.3rem;
+}
+

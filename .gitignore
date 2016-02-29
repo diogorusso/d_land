@@ -1,0 +1,14 @@
+_site
+.sass-cache
+.jekyll-metadata
+_assets/_scripts
+_assets/_imgs
+gulp
+gulpfile.js
+node_modules
+.bowerrc
+bower.json
+Gemfile
+Gemfile.lock
+_config_dev.yml
+package.json

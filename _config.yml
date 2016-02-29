@@ -1,0 +1,121 @@
+
+# Site settings
+
+#URL
+baseurl: "/d_land" # only for github, gulp baseurl set in config_dev.yml
+url: "http://work.diogorusso.com" # the base hostname & protocol for your site
+images:  "/assets/imgs/"
+
+
+# Build settings
+markdown: kramdown
+
+sass:
+    style: compressed
+    sass_dir: "/_assets/_sass/"
+
+gems: [jekyll-paginate]
+
+exclude: [/gulp, /node_modules,gulpfile.js,_assets,bower.json,Gemfile ,Gemfile.lock,package.json]
+
+# INDEX Pagination
+paginate:    9
+paginate_home: "/work"
+paginate_link: "/work/page"
+paginate_path: "/work/page:num"
+
+
+# Author
+title: "Diogo Russo Graphic + Experience Design"
+description: "Graphic + Experience Design"
+logo: "lib/imgs/s/logo.png"
+avatar: "https://dl.dropboxusercontent.com/u/4471882/diogorusso/me_11.png"
+email: hello@diogorusso.com
+
+#Social Media
+social:
+  #- name: "medium"
+    #url: "https://medium.com/@diogorusso"
+  #- name: "instagram"
+    #url: "https://www.pinterest.com/diogorusso"
+  - name: "behance"
+    url: "https://www.behance.net/diogorusso"
+  - name: "linkedin"
+    url: "https://www.linkedin.com/in/diogorusso/en"
+
+analytics:
+
+#Menu Links
+links:
+  - title: About
+    url: /
+  - title: Process
+    url: "#content"
+  - title: Work
+    url: "http://work.diogorusso.com"
+    external: true
+  - title: Cases
+    url: /cases
+    external: true
+  - title: Connect
+    url: /contact
+    icon: heart
+
+# Home Hero Slides
+
+heros-type: jpg
+heros-base: "/lib/imgs/h/"
+heros:
+  #- title: hello
+    #src: "hero_home_3"
+  - title: hello-2
+    src: "hero_home_2"
+  #- title: hello-3
+    #src: "hero_home"
+
+# Skills
+skills: 
+  - title: "Reasearch<br> + Strategy"
+    icon: "https://dl.dropboxusercontent.com/u/4471882/diogorusso/g.png"
+  - title: "Experience &<br> Service Design"
+    icon: "https://dl.dropboxusercontent.com/u/4471882/diogorusso/icon.png"
+  - title: "Graphic Design<br> + Illustration"
+    icon: "https://dl.dropboxusercontent.com/u/4471882/diogorusso/a.png"
+  - title: "Webdesign <br>& Frontend"
+    icon: "https://dl.dropboxusercontent.com/u/4471882/diogorusso/c.png"  
+
+
+# Featured Grid - Stuff I've done
+projects:
+  - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/22949811.54bfd433eecde.jpg"
+    fields: "Creative direction, Photography, Film"
+    url: "http://work.diogorusso.com/fwc-2014-conteudo-multimidia-cobertura-coca-cola"
+  - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/23073349.54c5ad7acaa62.jpg"
+    fields: "Branding, Graphic Design, Webdesign"
+    url: ""
+  - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/905d9223074515.54d5144f4c844.jpg"
+    fields: "Graphic Design"
+    url: ""
+  - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/22c43622577375.54cfc94b63d5f.jpg"
+    fields: "Webdesign"
+    url: ""
+  - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/22524345.54ac434d49610.jpg"
+    fields: "Film, Graphic Design"
+    url: ""
+  - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/bd838022490681.54d26993df29b.png"
+    fields: "Creative Direction, Film"
+
+
+
+# Content Defaults
+hero-posts: "false"
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      thumbnail: "https://farm1.staticflickr.com/232/492932050_148edf2ffb_o.jpg"
+      hero: "https://farm1.staticflickr.com/232/492932050_148edf2ffb_o.jpg"
+      role: "art director"
+      client: "estúdio berinjela"
+      share: "facebook twitter linkedin"

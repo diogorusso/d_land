@@ -1,0 +1,46 @@
+
+<br><br>
+<div class="text-center">
+	<h1>WORK</h1>
+	<h3>All | Strategy | Design </h3>
+	<br><br>	
+</div>
+
+<section class="feature-grid">
+	{% if site.paginate %}
+	{% for post in paginator.posts %}
+	  	<!-- GRID -->
+		<div class="large-4 medium-6 columns text-center">
+		  <div class="feature-box">
+		    <div class="feature-img">
+		    	<img src="{{ post.details.covers.original}}" style="width:100%">
+		    </div>
+			    {% assign fields = (post.details.fields) %}
+				<h5>
+					{% for field in fields limit:2  %}
+				    {{ field }}
+				    {% endfor %}
+			    </h5>
+			    <a href="{{  post.url | prepend: site.baseurl }}"></a>
+			    
+		  </div>
+		</div>
+
+	{% endfor %}
+	{% endif %}
+</section>
+<br>
+
+<!-- PAGINATION -->
+<section class="row pag-nav text-center">
+{% if paginator.previous_page %}
+	{% if paginator.previous_page == 1 %}
+		<a href="{{ site.baseurl }}{{site.paginate_home}}" class="button"><i class="fa fa-angle-left"></i> PREV</a>
+	{% else %}
+		  <a class="newer-posts button" href="{{ site.baseurl }}{{site.paginate_link}}{{ paginator.previous_page }}"> <i class="fa fa-angle-left "></i> PREV</a>
+	{% endif %}	
+{% endif %}
+{% if paginator.next_page %} 
+ 	<a class="older-posts button" href="{{ site.baseurl }}{{site.paginate_link}}{{ paginator.next_page }}/">NEXT <i class="fa fa-angle-right"></i></a>
+{% endif %}
+</section>

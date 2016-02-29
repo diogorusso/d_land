@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div id="fullpage">
+		{% assign sections = (page.sections) %}
+		{% for section in sections %}
+		<div class="section" id="{{ section.id }}" style="background: url({{ section.bg-img }}) {{ section.bg-color }} {{section.bg-position}} no-repeat; background-size: cover;">
+			{% for colunm in section.colunms %}
+					{% if colunm.type == 'text' %}
+					<div class="row" style="max-width: 750px;">
+						<div class="small-12 large-{{ colunm.size }} columns work"> 
+							<style type="text/css">
+								.work h1,h2,h3,h4,h5,h6,p{
+									color: {{ section.text-color }}
+								}
+							</style>
+							<img src="http://placehold.it/150x150">
+							<h1>{{ colunm.title}}</h1>
+							<h2>{{ colunm.subtitle}}</h2>
+							<br>
+							<p>{{ colunm.content }}</p>
+						</div>
+					</div> <!-- TEXT colunm -->
+					{% endif %} 
+					{% if colunm.type == 'img' %}
+					<div class="small-12 large-{{ colunm.size }} columns text-center" id="{{ section.id }}"> 
+						<img src="{{ colunm.content }}">
+					</div> <!-- IMG colunm -->
+					{% endif %} 
+			{% endfor %} 
+		</div> <!-- SECTIONS loop -->
+		{% endfor %}
+		<div class="section fp-auto-height">
+			{% include base/footer.html %}
+		</div> <!-- FOOTER -->
+</div> <!-- fullpage -->

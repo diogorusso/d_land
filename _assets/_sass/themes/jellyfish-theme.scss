@@ -1,0 +1,80 @@
+
+// SETTINGS
+
+//Typography
+//Adobe Typekit JS
+
+$theme-font-serif:"museo-slab",serif; 
+$theme-font-sans-serif:"proxima-nova-soft",sans-serif; 
+
+/*
+$primary-font:
+$primary-font-italic:
+$primary-font-bold:
+
+$secondary-font:
+$secondary-font-italic:
+$secondary-font-bold:
+*/
+
+// Animations: WOW + ANIMATE.css defaults
+
+
+// Text Sizes
+
+
+$theme-paragraph-font-size: 1.3rem;
+
+
+
+//Colors
+
+$theme-primary-color: #333333 ;   // bondi-blue
+$theme-secondary-color: #7f7f7f ; // white-lilac
+$theme-dark-color: #000;
+$theme-light-color: #cccccc;
+$theme-alert-color: #f04124 ;     // cinnabar
+$theme-success-color: #43AC6A ;   // sea-green
+$theme-warning-color: #f08a24 ;   // carrot
+$theme-info-color: #a0d3e8 ;      // cornflower
+
+$theme-body-bg: #fff !important;
+$theme-body-font-color: #222 !default;
+
+$theme-footer-bg: #fff !important;
+$theme-footer-txt: #999999 !important;
+
+$theme-button-text-color:#8C8C8C;
+
+$theme-hero-txt: #fff !important;
+$theme-hero-txt-bg: none;
+
+$theme-back-top-btn: #fff;
+$theme-back-top-btn-bg: rgba(0, 0, 0, 1.0);
+$theme-back-top-btn-bg-hover: rgba(255, 255, 255, 1.0);
+$theme-back-top-btn-hover: #000;
+
+$theme-preloader-overlay: #fff;
+$theme-preloader-spinner: #ccc;
+
+$top-bar-bg: rgba(255,255,255,0);
+$top-bar-bg-undocked: rgba(0, 0, 0, 1);
+$top-bar-txt: rgba(0, 0, 0, 1);
+$top-bar-txt-undocked: rgba(255, 255, 255, 1);
+$top-bar-expanded-bg: transparent;
+$top-bar-expanded-txt: #222222;
+
+
+@import
+	"../vendors/normalize-css/normalize",
+        "../vendors/foundation/scss/foundation.scss",
+        "base/syntax-highlighting",
+        "base/fullpage",
+        "base/base",
+        "base/footer",
+        "base/menu_top_bar",
+        "base/preloader",
+        "base/btn-back-top",
+        "components/hero_orbit",
+        "components/posts_grid"
+        

@@ -1,0 +1,95 @@
+
+.post-wrap{
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top:80px;
+}
+
+.post-fields{
+	padding: 5px;
+}
+
+.post-nav{
+
+    background: #fff;
+    width: 100%;
+}
+
+.post-sticky{
+
+    position: fixed;
+    top: 50px;
+    width: 100%;
+}
+
+.control a{
+  
+	margin-top: 1.5em;
+	font-size: 1.3em;
+	color: #8C8C8C;
+}
+
+.post{
+	min-width: 100%;
+}
+.feature-grid {
+  margin:0;
+  background:#000;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.feature-grid .columns {
+  padding-left:2em;
+  padding-right:2em;
+  margin-bottom:2em
+}
+
+.feature-grid a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.feature-grid div {
+  -webkit-transition:all 0.3s;
+  -moz-transition:all 0.3s;
+  -o-transition:all 0.3s;
+  transition:all 0.3s
+}
+
+.feature-box {
+  position:relative;
+  min-height:300px;
+}
+
+$grayscale:100%;
+$color:0;
+
+.feature-img {
+  background-size:cover;
+  position:relative;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+
+  -webkit-filter: grayscale($grayscale);
+  -moz-filter: grayscale($grayscale);
+  -ms-filter: grayscale($grayscale);
+  -o-filter: grayscale($grayscale);
+}
+
+.feature-box:hover .feature-img {
+  -webkit-filter: grayscale($color);
+  -moz-filter: grayscale($color);
+  -ms-filter: grayscale($color);
+  -o-filter: grayscale($color);
+}
+
+.feature-box h5 {
+  color:$theme-secondary-color;
+  margin-top: 1em;
+}

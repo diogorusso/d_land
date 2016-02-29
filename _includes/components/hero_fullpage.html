@@ -1,0 +1,51 @@
+{% for hero in site.heros %}
+
+<div class="slide" id="{{ hero.title }}" >
+	<div class="text-center">
+		<style type="text/css">
+			@media only screen and (max-width: 320px) {
+				#{{ hero.title }}{
+					background:url('{{ site.baseurl }}{{ site.heros-base }}{{ hero.src  }}-320.{{site.heros-type}} ');
+				}
+			}
+			@media only screen and (min-width: 320px) and (max-width: 640px) {
+				#{{ hero.title }}{
+					background:url('{{ site.baseurl }}{{ site.heros-base }}{{ hero.src  }}-640.{{site.heros-type}}');
+				}
+			}
+			@media only screen and (min-width: 641px) and (max-width: 1024px) {
+				#{{ hero.title }}{
+					background:url('{{ site.baseurl }}{{ site.heros-base }}{{ hero.src  }}-1024.{{site.heros-type}}');
+				}
+			}
+			@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+				#{{ hero.title }}{
+					background:url('{{ site.baseurl }}{{ site.heros-base }}{{ hero.src  }}-1440.{{site.heros-type}}');
+				}
+			}
+			@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+				#{{ hero.title }}{
+					background:url('{{ site.baseurl }}{{ site.heros-base }}{{ hero.src  }}-1920.{{site.heros-type}}');
+				}
+			}
+			@media only screen and (min-width: 1920px) {
+				#{{ hero.title }}{
+					background:url('{{ site.baseurl }}{{ site.heros-base }}{{ hero.src  }}-2420.{{site.heros-type}}');
+				}
+			}
+		</style>
+
+		<img src="https://dl.dropboxusercontent.com/u/4471882/diogorusso/p.png" style="vertical-align: baseline; width:250px;">
+
+		<p style="color: #fff;">I help businesses design meaningful experiences<br> to their customers through<br> effective visuals and creative strategies.</p>
+		
+		<a href="" class="button large page-scroll">
+			Read More <i class="fa fa-angle-down"></i>
+		</a>
+	</div>
+</div>
+
+{% endfor %}
+
+
+

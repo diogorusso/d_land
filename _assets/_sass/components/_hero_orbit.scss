@@ -1,0 +1,74 @@
+.orbit-timer{
+  visibility: hidden;
+}
+.orbit-container {
+  width: 100%;
+  height: 100%;  
+}
+  
+.orbit-slides-container {
+  width: 100%;
+  height: 100% !important;
+  
+}
+ul[data-orbit] li {
+  background-size:cover !important; 
+  background-attachment:fixed !important;
+  width:100%;
+  height:100%;
+}
+
+
+.scroll-box{
+  position:absolute;
+    left:0;
+    right:0;
+    top:80%;
+    margin-left:auto;
+    margin-right:auto;
+    width:180px;
+}
+
+
+.hero h1 {
+  color:$theme-hero-txt;
+  font-weight: 100;
+}
+
+.hero h1 {
+  color:$theme-hero-txt;
+  font-weight: 100;
+  font-size:2.8rem !important;
+  background: $theme-hero-txt-bg;
+}
+
+.hero h2 {
+  color:$theme-hero-txt;
+  font-weight: 100;
+}
+
+.hero h3 {
+  color:$theme-hero-txt;
+  font-weight: 100;
+}
+
+.hero h4 {
+  color:$theme-hero-txt;
+  font-weight: 100;
+}
+.hero h5 {
+  color:$theme-hero-txt;
+  font-weight: 100;
+}
+
+.hero h6 {
+  color:$theme-hero-txt;
+  font-weight: 100;
+}
+
+
+.hero section{
+  position:absolute;
+  bottom: 60px;
+}
+

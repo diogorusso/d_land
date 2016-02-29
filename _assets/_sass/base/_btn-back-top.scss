@@ -1,0 +1,17 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20%;
+    right: 0px;
+    text-decoration: none;
+    color: $theme-back-top-btn;
+    background-color: $theme-back-top-btn-bg;
+    font-size: 32px;
+    display: none;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.back-to-top a {
+    color: $theme-back-top-btn;
+}
+

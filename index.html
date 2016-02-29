@@ -1,0 +1,75 @@
+---
+layout: page
+hero: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/0db2fd22524477.56321ac845530.png"
+---
+<!-- AUTHOR BIO:  -->
+<a id="content"></a>
+	<div class="section">
+		{% include components/hero_fullpage.html %}
+	</div>
+
+	<!--WHO I AM -->
+	
+	<div class="section">
+		<div class="row">
+			<div class="small-12 large-12 columns">
+
+				<div class="text-center"><img src="https://dl.dropboxusercontent.com/u/4471882/diogorusso/me_11_lg.png" style="width: 185px;"></div>
+
+				<h1 class="text-center">I’m a Designer and Storyteller</h1>
+				<br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 large-4 columns">
+				<p>In the last years I’ve been runing my creative studio in Rio de Janeiro and I've worked for different Brazilian and International companies and I’ve been engaged in cultural and social projects across the world.</p>
+			</div>
+
+			<div class="small-12 large-4 columns">
+				<p>My skills include human centered design methodologies, project management,service and experience design, graphic tools. I'm also a skilled cultural producer and passionated entrpreneur.</p>
+			</div>
+
+			<div class="small-12 large-4 columns">
+				<p>I’m now a MBA in Design Strategy Candidate at California College of the Arts in San Francisco, an innovative program grounded in design thinking and research. Enjoying living in Berkeley.</p>
+				<br>
+			</div>
+			<div class="small-12 large-12 columns text-center">
+			<a href="" type="button" class="button large" target="blank"> Full Profile </a>
+			
+			</div>
+		</div>
+	</div>
+
+	<!-- WHAT I DO -->
+	<div class="section" style="background: #eee;">
+		<div class="row">
+			<h1 class="text-center">What I do</h1>
+			<br><br><br>
+			{% for skill in site.skills %}
+			<div class="small-6 medium-3 large-3 columns text-center">
+				<img src="{{ skill.icon }}">
+				<br><br>
+				<h3>{{ skill.title }}</h3>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<!-- STUFF I've DONE -->
+	<div class ="section">
+	<section class="feature-grid">
+		{% for project in site.projects %}
+		<div class="large-4 medium-6 columns text-center">
+		  <div class="feature-box">
+		    <div class="feature-img">
+		    	<img src="{{ project.cover }}" >
+		    </div>
+		      <h5>{{ project.fields }}</h5>
+		      <a href="{{ project.url }}" target="blank"></a>
+		  </div>
+		</div>
+		{% endfor %}
+	</section>
+	</div>
+	
+

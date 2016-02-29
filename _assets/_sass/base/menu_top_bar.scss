@@ -1,0 +1,230 @@
+.anim-menu {
+  transition: background 0.5s ease !important;
+  background:$top-bar-bg !important;
+  position: fixed !important;
+  z-index: 99 !important;
+  width: 100% !important;
+}
+
+.undocked {
+    transition: background 0.5s ease !important;
+    background:$top-bar-bg-undocked !important;
+  }
+
+
+.links{
+  padding-right: 25px !important;
+}
+
+.page-link{
+  font-size: 1rem !important;
+}
+
+
+
+// TOP BAR LOGO
+
+
+.name img {
+  max-height: 50px;
+}
+
+.undocked .name img {
+  max-height: 50px;
+}
+
+// TOP BAR BG
+
+.top-bar  {
+  background:transparent !important;
+  font-family: $theme-font-sans-serif !important;
+  width:100% !important;
+  transition: padding-top 0.5s ease, height 0.5s ease; //padding animation
+  padding-top:20px; //padding animation - start
+  height:66px !important;
+  .name h1 a {
+    transition: color 0.5s ease;
+    color:$theme-light-color!important;
+  }
+}
+
+.undocked .top-bar-section ul li>a{
+  font-family: $theme-font-sans-serif !important;
+  color: $theme-light-color !important;
+}
+
+.undocked .top-bar {
+  transition: height 0.5s ease, padding-top 0.5s ease;
+  height:50px !important;
+  padding-top:0px; //padding animation - end
+  .name h1 a {
+    transition: color 0.5s ease;
+    color: $top-bar-txt-undocked !important;
+  }
+}
+
+.top-bar .top-bar-section ul li>a{
+  visibility: visible;
+}
+
+.undocked .top-bar .top-bar-section ul li>a{
+  visibility: visible;
+}
+
+.undocked .top-bar.expanded{
+  transition: height 0.5s ease;
+  height:275px !important;
+}
+
+.top-bar.expanded{
+  transition: height 0.5s ease;
+  height:275px !important;
+}
+
+
+// menu title text
+.top-bar.expanded .title-area{
+  background: $top-bar-expanded-bg !important;
+}
+
+.top-bar .toggle-topbar a{
+  color: $top-bar-txt !important;
+  transition: color 0.5s ease !important;
+  visibility: hidden;
+}
+
+
+.undocked .top-bar .toggle-topbar a{
+  color: $top-bar-txt-undocked !important;
+  transition: color 0.5s ease!important;
+   visibility: visible;
+}
+
+.top-bar.expanded .toggle-topbar a{
+  color: $theme-primary-color !important;
+}
+
+.undocked .top-bar.expanded .toggle-topbar a{
+  color: $theme-light-color !important;
+}
+
+// hamburger menu
+
+.top-bar .toggle-topbar a span::after{
+  transition: box-shadow 0.5s ease !important;
+  box-shadow: 0 0 0 1px $top-bar-expanded-txt, 0 7px 0 1px $top-bar-expanded-txt, 0 14px 0 1px $top-bar-expanded-txt !important;
+}
+
+.undocked .top-bar .toggle-topbar a span::after{
+  transition: box-shadow 0.5s ease !important;
+  box-shadow: 0 0 0 1px $top-bar-txt-undocked, 0 7px 0 1px $top-bar-txt-undocked, 0 14px 0 1px $top-bar-txt-undocked !important;
+}
+
+.top-bar.expanded .toggle-topbar a span::after{
+  box-shadow: 0 0 0 1px $top-bar-expanded-txt, 0 7px 0 1px $top-bar-expanded-txt, 0 14px 0 1px $top-bar-expanded-txt !important;
+}
+
+.undocked .top-bar.expanded .toggle-topbar a span::after{
+  box-shadow: 0 0 0 1px $top-bar-txt-undocked, 0 7px 0 1px $top-bar-txt-undocked, 0 14px 0 1px $top-bar-txt-undocked !important;
+}
+
+
+
+
+// TOP BAR Section LI
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background:transparent!important;
+}
+.undocked .top-bar-section li:not(.has-form) a:not(.button) {
+  background:transparent!important;
+}
+
+.top-bar-section ul li {
+  background:transparent !important;
+  & > a {
+    transition: color 0.5s ease !important;
+    color:$theme-primary-color !important;  
+	}
+}
+.undocked .top-bar-section ul li {
+  background:transparent !important;
+  & > a {
+    transition: background 0.5s ease !important;
+    color:$theme-light-color !important;
+	}
+}
+
+
+// mobile top bar animation
+
+@-webkit-keyframes topbar-dropdown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+     opacity: 1.0;
+ }
+}
+
+@-moz-keyframes topbar-dropdown {
+  0% {
+    -moz-transform: translateY(-100%);
+     opacity: 0;
+ }
+
+  100% {
+    -moz-transform: translateY(0);
+     opacity: 1.0;
+ }
+}
+
+@-ms-keyframes topbar-dropdown {
+  0% {
+    -ms-transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    -ms-transform: translateY(0);
+    opacity: 1.0;
+  }
+}
+
+@keyframes topbar-dropdown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1.0;
+  }
+}
+
+.top-bar .title-area {
+  position: relative;
+  z-index: 1;  
+}
+.top-bar-section > ul {
+  z-index: 0;
+}
+
+.expanded .top-bar-section > ul {
+  -webkit-animation: topbar-dropdown 0.5s ease-in-out;
+  -moz-animation: topbar-dropdown 0.5s ease-in-out;
+  -ms-animation: topbar-dropdown 0.5s ease-in-out;
+  animation: topbar-dropdown 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .top-bar-section > ul {
+        position: initial;
+        z-index: initial;
+    }
+    
+}
