@@ -13,13 +13,10 @@
 		<div class="large-4 medium-6 columns text-center">
 		  <div class="feature-box">
 		    <div class="feature-img">
-		    	<img src="{{ post.details.covers.original}}" style="width:100%">
+		    	<img src="{{ post.thumbnail}}" style="width:100%">
 		    </div>
-			    {% assign fields = (post.details.fields) %}
 				<h5>
-					{% for field in fields limit:2  %}
-				    {{ field }}
-				    {% endfor %}
+					{{post.category}} , {{ post.fields }}
 			    </h5>
 			    <a href="{{  post.url | prepend: site.baseurl }}"></a>
 			    
