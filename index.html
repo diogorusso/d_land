@@ -1,23 +1,24 @@
 ---
 layout: page
+title: "Hello!"
 hero: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/0db2fd22524477.56321ac845530.png"
 ---
 <!-- AUTHOR BIO:  -->
 <a id="content"></a>
-	<div class="section">
+	<div class="section" data-anchor="now">
 		{% include components/hero_fullpage.html %}
 	</div>
 
 	<!--WHO I AM -->
 	
-	<div class="section" id="about">
+	<div class="section" data-anchor="about">
 		<div class="row">
 			<div class="small-12 large-12 columns">
 
 				<div class="text-center"><img src="https://dl.dropboxusercontent.com/u/4471882/diogorusso/me_11_lg.png" style="width: 185px;"></div>
 				<h1 class="text-center">I’m a Designer and Storyteller</h1>
 				<br>
-				<h3 class="text-center" style="max-width: 700px; margin: auto;">I help businesses design meaningful experiences and visuals to their customers through creative strategies.</h3>
+				<h3 class="text-center" style="max-width: 700px; margin: auto;">I help businesses design meaningful experiences and effective visuals to their customers through creative strategies.</h3>
 				<br><br>
 				<div class="text-center">
 					<a href="" type="button" class="button large text-center" target="blank"> Full Profile </a>
@@ -45,7 +46,7 @@ hero: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/0db2fd22524477.56321
 	</div>
 
 	<!-- WHAT I DO -->
-	<div class="section" style="background: #eee;">
+	<div class="section" style="background: #eee;" data-anchor="skills">
 		<div class="row">
 			<h1 class="text-center">What I do</h1>
 			<br><br><br>
@@ -60,13 +61,13 @@ hero: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/0db2fd22524477.56321
 	</div>
 
 	<!-- STUFF I've DONE -->
-	<div class ="section" style="padding-top: 40px;">
+	<div class ="section" style="padding-top: 30px;" data-anchor="work">
 		<div class="feature-grid">
 			{% for project in site.projects %}
 			<div class="large-4 medium-4 columns text-center">
 			  <div class="feature-box">
 			    <div class="feature-img">
-			    	<img data-src="{{ project.cover }}" >
+			    	<img src="{{ project.cover }}" >
 			    </div>
 			      <h5>{{ project.fields }}</h5>
 			      <a href="{{ project.url }}" target="blank"></a>

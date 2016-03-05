@@ -42,15 +42,14 @@
 .feature-grid .columns {
   padding-left:2em;
   padding-right:2em;
-  margin-bottom:2em
 }
-
 
 @media #{$medium-only} { 
   .feature-grid .columns {
-    padding:0.5em;
+    padding-left:0.5em;
+    padding-left:0.5em;
     margin-bottom:0.2em;
-}
+  }
 
 }
 
@@ -99,5 +98,4 @@ $color:0;
 
 .feature-box h5 {
   color:$theme-secondary-color;
-  margin-top: 1em;
 }

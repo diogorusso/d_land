@@ -9,6 +9,13 @@
 
   {% endif %}
 
+  {% if page.url == "/" %} 
+    <div>
+      <a href="http://work.diogorusso.com"><h2>see All Projects</h2></a>
+      <br><br>
+    </div>
+  {% endif %}
+
   <div class="row text-center">
     <div class="small-12 large-12 columns">
       {% for media in site.social %}

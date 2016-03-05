@@ -48,15 +48,12 @@ analytics:
 #Menu Links
 links:
   - title: About
-    url: /
-  - title: Process
-    url: "#content"
+    url: "#about"
+  - title: Skills
+    url: "#skills"
   - title: Work
-    url: "http://work.diogorusso.com"
-    external: true
-  - title: Cases
-    url: /cases
-    external: true
+    url: "#work"
+    #external: true
   - title: Connect
     url: /contact
     icon: heart
@@ -92,18 +89,19 @@ projects:
     url: "http://work.diogorusso.com/fwc-2014-conteudo-multimidia-cobertura-coca-cola"
   - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/23073349.54c5ad7acaa62.jpg"
     fields: "Branding, Experience"
-    url: ""
+    url: "http://work.diogorusso.com/projeto-tocayo-id"
   - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/905d9223074515.54d5144f4c844.jpg"
     fields: "Graphic Design"
-    url: ""
+    url: "http://work.diogorusso.com/escola-sesc-id"
   - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/22c43622577375.54cfc94b63d5f.jpg"
     fields: "Webdesign"
-    url: ""
+    url: "http://work.diogorusso.com/lotus-combo-alusao-provavel-a-um-sonho"
   - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/22524345.54ac434d49610.jpg"
     fields: "Film, Graphic Design"
-    url: ""
+    url: "http://work.diogorusso.com/lotus-combo-alusao-provavel-a-um-sonho"
   - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/bd838022490681.54d26993df29b.png"
     fields: "Creative Direction, Film"
+    url: "http://work.diogorusso.com/idealizar-forum-vida-videos"
 
 
 
