@@ -10,17 +10,21 @@ hero: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/0db2fd22524477.56321
 
 	<!--WHO I AM -->
 	
-	<div class="section">
+	<div class="section" id="about">
 		<div class="row">
 			<div class="small-12 large-12 columns">
 
 				<div class="text-center"><img src="https://dl.dropboxusercontent.com/u/4471882/diogorusso/me_11_lg.png" style="width: 185px;"></div>
-
 				<h1 class="text-center">I’m a Designer and Storyteller</h1>
 				<br>
+				<h3 class="text-center" style="max-width: 700px; margin: auto;">I help businesses design meaningful experiences and visuals to their customers through creative strategies.</h3>
+				<br><br>
+				<div class="text-center">
+					<a href="" type="button" class="button large text-center" target="blank"> Full Profile </a>
+				</div>
 			</div>
 		</div>
-		<div class="row">
+		<!--div class="row">
 			<div class="small-12 large-4 columns">
 				<p>In the last years I’ve been runing my creative studio in Rio de Janeiro and I've worked for different Brazilian and International companies and I’ve been engaged in cultural and social projects across the world.</p>
 			</div>
@@ -37,7 +41,7 @@ hero: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/0db2fd22524477.56321
 			<a href="" type="button" class="button large" target="blank"> Full Profile </a>
 			
 			</div>
-		</div>
+		</div-->
 	</div>
 
 	<!-- WHAT I DO -->
@@ -56,20 +60,74 @@ hero: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/0db2fd22524477.56321
 	</div>
 
 	<!-- STUFF I've DONE -->
-	<div class ="section">
-	<section class="feature-grid">
-		{% for project in site.projects %}
-		<div class="large-4 medium-6 columns text-center">
-		  <div class="feature-box">
-		    <div class="feature-img">
-		    	<img src="{{ project.cover }}" >
-		    </div>
-		      <h5>{{ project.fields }}</h5>
-		      <a href="{{ project.url }}" target="blank"></a>
-		  </div>
+	<div class ="section" style="padding-top: 40px;">
+		<div class="feature-grid">
+			{% for project in site.projects %}
+			<div class="large-4 medium-4 columns text-center">
+			  <div class="feature-box">
+			    <div class="feature-img">
+			    	<img data-src="{{ project.cover }}" >
+			    </div>
+			      <h5>{{ project.fields }}</h5>
+			      <a href="{{ project.url }}" target="blank"></a>
+			  </div>
+			</div>
+			{% endfor %}
 		</div>
-		{% endfor %}
-	</section>
 	</div>
+
 	
+
+
+<!--div class ="section" data-anchor="hella">
+	<div class="slide">
+		<div class="feature-grid">
+			<div class="large-4 medium-4 columns text-center">
+				<div class="feature-box">
+			    	<div class="feature-img">
+			    		<img src="https://mir-s3-cdn-cf.behance.net/projects/404/22949811.54bfd433eecde.jpg">
+			    	</div>
+			    	<h5>hello</h5>
+			      	<a href="#" target="blank"></a>
+		    	</div>
+		    </div>
+		    <div class="large-4 medium-4 columns text-center">
+				<div class="feature-box">
+			    	<div class="feature-img">
+			    		<img src="https://mir-s3-cdn-cf.behance.net/projects/404/22949811.54bfd433eecde.jpg">
+			    	</div>
+			    	<h5>hello</h5>
+			      	<a href="#" target="blank"></a>
+		    	</div>
+		    </div>
+		    <div class="large-4 medium-4 columns text-center">
+				<div class="feature-box">
+			    	<div class="feature-img">
+			    		<img src="https://mir-s3-cdn-cf.behance.net/projects/404/22949811.54bfd433eecde.jpg">
+			    	</div>
+			    	<h5>hello</h5>
+			      	<a href="#" target="blank"></a>
+		    	</div>
+		    </div>
+		</div>
+		<div>
+			<div class="small-12 large-12 columns text-center">
+				<a href="{{site.paginate_home}}" type="button" class="button large" target="blank"> All Work </a>
+			</div>
+		</div>
+	</div>
+	<div class="slide">
+		<div class="feature-grid">
+			<div class="large-4 medium-6 columns text-center">
+				<div class="feature-box">
+			    	<div class="feature-img">
+			    		<img src="https://mir-s3-cdn-cf.behance.net/projects/404/22949811.54bfd433eecde.jpg">
+			    	</div>
+			    	<h5>hello</h5>
+			      	<a href="#" target="blank"></a>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+</div-->	
 

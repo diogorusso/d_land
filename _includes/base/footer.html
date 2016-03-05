@@ -1,6 +1,14 @@
 <!-- Footer -->
 <footer class="footer">
 
+  {% if page.id %} 
+    <div class="text-center">
+      <h3 style="color:#000; ">PREV | HOME | NEXT</h3>
+      <br><br>
+    </div>
+
+  {% endif %}
+
   <div class="row text-center">
     <div class="small-12 large-12 columns">
       {% for media in site.social %}

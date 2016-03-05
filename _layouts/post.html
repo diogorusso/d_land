@@ -29,7 +29,7 @@ layout: default
 					{% endif %} 
 					{% if colunm.type == 'img' %}
 					<div class="small-12 large-{{ colunm.size }} columns text-center" id="{{ section.id }}"> 
-						<img src="{{ colunm.content }}">
+						<img data-src="{{ colunm.content }}">
 					</div> <!-- IMG colunm -->
 					{% endif %} 
 			{% endfor %} 

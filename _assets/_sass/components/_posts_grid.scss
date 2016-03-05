@@ -45,6 +45,15 @@
   margin-bottom:2em
 }
 
+
+@media #{$medium-only} { 
+  .feature-grid .columns {
+    padding:0.5em;
+    margin-bottom:0.2em;
+}
+
+}
+
 .feature-grid a {
   position: absolute;
   top: 0;
@@ -62,7 +71,6 @@
 
 .feature-box {
   position:relative;
-  min-height:300px;
 }
 
 $grayscale:100%;
