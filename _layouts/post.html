@@ -2,14 +2,26 @@
 layout: default
 ---
 <div id="fullpage">
+
+		<div class="section" id="lokoo"> 
+			<div class="row">
+				<div class="small-12 large-12 columns">
+					<iframe src="//www.slideshare.net/slideshow/embed_code/key/ANii03ooTuXPdI" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/greylockpartners/a-blueprint-for-executive-hiring" title="Blueprint for Executive Hiring" target="_blank">Blueprint for Executive Hiring</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/greylockpartners">Greylock Partners</a></strong> </div>
+				</div>
+			</div>
+		</div>
+
+		
+
 		<div class="section" style="background:url({{ page.bg-intro }})no-repeat; background-size: cover;">
 			<h1 class="text-center" style="color:{{ page.text-color }}">{{ page.title }}</h1>
 			<h2 class="text-center" style="color:{{ page.text-color }}">{{ page.category }}</h2>
 			<h4 class="text-center" style="color:{{ page.text-color }}">{{ page.fields }}</h4>
+
 		</div>
 		{% assign sections = (page.sections) %}
 		{% for section in sections %}
-		<div class="section" id="{{ section.id }}" style="background: url({{ section.bg-img }}) {{ section.bg-color }} {{section.bg-position}} no-repeat; background-size: cover;">
+		<div class="section" id="{{ section.id }}" style="background: url({{ section.bg-img }}) {{ section.bg-color }} {{section.bg-position}} no-repeat; background-size: cover; padding-top: 25px;">
 			{% for colunm in section.colunms %}
 					{% if colunm.type == 'text' %}
 					<div class="row" style="max-width: 750px;">
@@ -29,12 +41,13 @@ layout: default
 					{% endif %} 
 					{% if colunm.type == 'img' %}
 					<div class="small-12 large-{{ colunm.size }} columns text-center" id="{{ section.id }}"> 
-						<img data-src="{{ colunm.content }}">
+						<img src="{{ colunm.content }}" style="max-height: 575px;">
 					</div> <!-- IMG colunm -->
 					{% endif %} 
 			{% endfor %} 
 		</div> <!-- SECTIONS loop -->
 		{% endfor %}
+				
 		<div class="section fp-auto-height">
 			{% include base/footer.html %}
 		</div> <!-- FOOTER -->

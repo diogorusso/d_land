@@ -85,10 +85,10 @@ skills:
 # Featured Grid - Stuff I've done
 projects:
   - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/22949811.54bfd433eecde.jpg"
-    fields: "Creative direction, Film"
+    fields: "Creative Direction - case"
     url: "http://work.diogorusso.com/fwc-2014-conteudo-multimidia-cobertura-coca-cola"
   - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/23073349.54c5ad7acaa62.jpg"
-    fields: "Branding, Experience"
+    fields: "Branding, Experience - case"
     url: "http://work.diogorusso.com/projeto-tocayo-id"
   - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/905d9223074515.54d5144f4c844.jpg"
     fields: "Graphic Design"
@@ -100,7 +100,7 @@ projects:
     fields: "Film, Graphic Design"
     url: "http://work.diogorusso.com/lotus-combo-alusao-provavel-a-um-sonho"
   - cover: "https://mir-s3-cdn-cf.behance.net/projects/404/bd838022490681.54d26993df29b.png"
-    fields: "Creative Direction, Film"
+    fields: "Creative Direction, Film - case"
     url: "http://work.diogorusso.com/idealizar-forum-vida-videos"
 
 
